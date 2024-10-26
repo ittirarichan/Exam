@@ -24,7 +24,7 @@ while True:
             }
 
             lib.append(book)
-            print("Book '{title}' added successfully")
+            print(f"Book '{title}' added successfully")
 
     elif choice == 2 :
         book_id = int(input("Enter Book ID: "))
@@ -38,20 +38,20 @@ while True:
                  book['Title'] = title
                  book['Author'] = author
                  book['Type'] = type
-                 print("Book ID '{book_id}' added successfully")
+                 print(f"Book ID '{book_id}' added successfully")
                  found = True
                  break
         if not found:
             print("Book Not found ")
     
     elif choice == 3 :
-        book_id = input("Enter Book ID to remove: ")
+        book_id = int(input("Enter Book ID to remove: "))
         found = False
         
         for book in lib:
             if book['Book ID'] == book_id:
                 lib.remove(book)
-                print("Book ID '{book_id}' removed successfully")
+                print(f"Book ID '{book_id}' removed successfully")
                 found = True
                 break
         
@@ -88,5 +88,8 @@ while True:
         break
     else:
         print("Enterd an invalid choice, Try agin")
+
+
+              
 
 
