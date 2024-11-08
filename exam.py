@@ -38,10 +38,11 @@
 #     print()
 
     
-for i in range(1,):
-    for j in range(i):
-        print((i+j),end='\t')
+# for i in range(1,):
+#     for j in range(i):
+#         print((i+j),end='\t')
 
 
 
+# ----------------------------------------------------
 
